@@ -1,0 +1,22 @@
+{
+    "name": "enlightenment/core",
+    "type": "library",
+    "description": "Enlightenment Framework",
+    "keywords": [
+        "WordPress",
+        "Theme",
+        "Framework"
+    ],
+    "homepage": "https://onedesigns.com/themes/enlightenment/",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "One Designs",
+            "homepage": "https://onedesigns.com/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.6"
+    }
+}
