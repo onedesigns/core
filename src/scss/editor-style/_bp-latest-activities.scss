@@ -1,0 +1,42 @@
+:where(.editor-styles-wrapper) {
+	.bp-latest-activities-block {
+		.widget-error {
+			border: none;
+		    box-shadow: none;
+		}
+
+		.bp-feedback {
+			position: relative;
+			display: flex;
+			align-items: baseline;
+			padding: 1rem 1rem;
+		    margin-bottom: 1rem;
+		    border: 1px solid #b6effb;
+		    border-radius: var(--bs-border-radius);
+		    background-color: #cff4fc;
+			color: #055160;
+
+			.bp-icon {
+				-moz-osx-font-smoothing: grayscale;
+			    -webkit-font-smoothing: antialiased;
+			    display: inline-block;
+				margin-right: .5rem;
+				font-family: "Font Awesome 5 Free";
+				font-weight: 900;
+			    font-style: normal;
+			    font-variant: normal;
+			    line-height: 1;
+			    text-rendering: auto;
+
+				&::before {
+					content: "\f05a";
+				}
+			}
+
+			p {
+				padding: 0;
+				margin: 0;
+			}
+		}
+	}
+}

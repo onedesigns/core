@@ -1,0 +1,108 @@
+:where(.editor-styles-wrapper) {
+    .wp-block-table,
+    .wp-block-jetpack-markdown__preview {
+        table {
+            margin-bottom: 1rem;
+            color: #212529;
+
+            thead,
+            tfoot {
+                border: none;
+            }
+
+            thead {
+				tr:last-child th {
+					border-bottom: 2px solid currentColor;
+				}
+
+                th {
+                    vertical-align: bottom;
+
+                    &:not(.has-text-align-center):not(.has-text-align-right) {
+                        text-align: left;
+                    }
+                }
+            }
+
+			tfoot {
+				tr:first-child td {
+                    border-top: 2px solid currentColor;
+				}
+			}
+
+            td,
+            th {
+                padding: .5rem;
+                border-color: transparent transparent #dee2e6 transparent;
+                border-top-style: dotted;
+                border-left-style: dotted;
+				border-right-style: dotted;
+                border-bottom-style: solid;
+                border-width: 0 0 1px 1px;
+                vertical-align: top;
+
+				&:last-child {
+					border-right-width: 1px;
+				}
+            }
+
+			tr:first-child {
+				td,
+				th {
+					border-top-width: 1px;
+				}
+			}
+
+            thead tr:last-child th {
+                border-bottom-width: 2px;
+            }
+        }
+    }
+
+	.wp-block-table {
+		&.is-selected table,
+		table:hover {
+			td,
+			th {
+				border-left-color: #dee2e6;
+
+				&:last-child {
+					border-right-color: #dee2e6;
+				}
+			}
+
+			tr:first-child {
+				td,
+				th {
+					border-top-color: #dee2e6;
+				}
+			}
+
+			tfoot tr:first-child {
+				td {
+					border-top-color: currentColor;
+				}
+			}
+		}
+	}
+
+    .wp-block-table {
+        border-bottom: none;
+
+        &.is-style-stripes {
+            table {
+                th {
+                    border-color: #dee2e6 transparent transparent transparent;
+                }
+
+                tbody tr:nth-of-type(odd) td {
+                    background-color: rgba(0,0,0,.05);
+                }
+            }
+        }
+
+        figcaption {
+            text-align: left;
+        }
+    }
+}

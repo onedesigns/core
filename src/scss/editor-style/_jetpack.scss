@@ -1,0 +1,118 @@
+:where(.editor-styles-wrapper) {
+    .jetpack-field-label {
+        margin-bottom: 0.5rem;
+
+        .rich-text.jetpack-field-label__input {
+            padding-right: 0;
+			margin-bottom: 0;
+        }
+
+        .required {
+            margin-left: 0.25rem;
+            color: #6c757d;
+            opacity: 1;
+        }
+    }
+
+    .jetpack-field {
+		&.jetpack-field-multiple .jetpack-field-multiple__list .wp-block {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+
+		.jetpack-field-option {
+			align-items: baseline;
+
+			& > .rich-text {
+				line-height: 1.5;
+			}
+		}
+
+		.jetpack-option {
+			margin-bottom: 0;
+		}
+
+		.jetpack-field__input,
+		.jetpack-field__textarea,
+        input.components-text-control__input,
+        textarea.components-textarea-control__input {
+			appearance: none;
+			display: block;
+			width: 100%;
+            padding: 0.375rem 0.75rem;
+            border: 1px solid var(--bs-border-color);
+            border-radius: var(--bs-border-radius);
+			background-color: var(--bs-body-bg);
+			background-clip: padding-box;
+            color: var(--bs-body-color);
+            font-size: 1rem;
+			font-weight: 400;
+            line-height: 1.5;
+			transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+			&:focus {
+				border-color: #86b7fe;
+				outline: 0;
+				box-shadow: var(--bs-focus-ring-x, 0) var(--bs-focus-ring-y, 0) var(--bs-focus-ring-blur, 0) var(--bs-focus-ring-width) var(--bs-focus-ring-color);
+			}
+        }
+
+		.jetpack-field-dropdown__toggle {
+			border-radius: var(--bs-border-radius);
+			transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+		}
+
+		&.jetpack-field-dropdown.is-selected .jetpack-field-dropdown__toggle {
+			border-color: #86b7fe;
+			box-shadow: var(--bs-focus-ring-x, 0) var(--bs-focus-ring-y, 0) var(--bs-focus-ring-blur, 0) var(--bs-focus-ring-width) var(--bs-focus-ring-color);
+		}
+
+		.jetpack-field-checkbox__checkbox,
+		.jetpack-field-consent__checkbox {
+			font-size: var(--jetpack--contact-form--font-size, inherit);
+		}
+
+        &.jetpack-field-checkbox .components-base-control__label,
+        &.jetpack-field-multiple .jetpack-option {
+            position: relative;
+            display: block;
+            padding-left: 1.25rem;
+            margin-bottom: 0;
+
+            .jetpack-field-checkbox__checkbox,
+            .jetpack-option__type {
+                position: absolute;
+                margin-top: 0.3rem;
+                margin-left: -1.25rem;
+            }
+
+            .jetpack-field-label {
+                margin-bottom: 0;
+            }
+
+            .jetpack-field-label__input,
+            .jetpack-option__input {
+                padding-left: 0;
+                font-size: 1rem;
+                font-weight: 400;
+            }
+
+			.jetpack-option__input {
+				min-height: auto;
+			    border: none;
+			}
+
+			.jetpack-option__remove {
+				padding: 2px;
+			}
+        }
+    }
+
+	:where(:not(.contact-form)) > .jetpack-field {
+		.jetpack-field__input,
+		.jetpack-field__textarea {
+			padding-left: 0.75rem;
+			padding-right: 0.75rem;
+		}
+	}
+}

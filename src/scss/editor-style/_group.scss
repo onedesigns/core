@@ -1,0 +1,46 @@
+:where(.editor-styles-wrapper) {
+	.wp-block[data-align="full"] {
+		& > .wp-block-group {
+			&:not(:has(> .wp-block-group__inner-container)),
+			& > .wp-block-group__inner-container {
+				padding-right: calc(var(--bs-gutter-x) * .5);
+			    padding-left: calc(var(--bs-gutter-x) * .5);
+				margin-right: auto;
+			    margin-left: auto;
+
+				@media (min-width: 576px) {
+					max-width: 540px;
+				}
+
+				@media (min-width: 768px) {
+					max-width: 720px;
+				}
+
+				@media (min-width: 992px) {
+					max-width: 960px;
+				}
+
+				@media (min-width: 1200px) {
+					max-width: 1140px;
+				}
+
+				@media (min-width: 1400px) {
+					max-width: 1320px;
+				}
+			}
+
+			&.has-background:not(:has(> .wp-block-group__inner-container)) {
+				&::before {
+					content: "";
+					position: absolute;
+					top: 0;
+					bottom: 0;
+				    left: calc(-50vw - -50%);
+				    right: calc(-50vw - -50%);
+					background-color: inherit;
+					background-image: inherit;
+				}
+			}
+		}
+	}
+}

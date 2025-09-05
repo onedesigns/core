@@ -1,0 +1,96 @@
+:where(.editor-styles-wrapper) {
+    .wp-block-rss {
+        list-style: none;
+        padding-left: 0;
+
+        &.is-grid {
+            margin-right: -15px;
+            margin-left: -15px;
+
+            li {
+                position: relative;
+                width: 100%;
+                padding-right: 15px;
+                padding-left: 15px;
+                margin-right: 0;
+                margin-bottom: 0;
+            }
+
+            &.columns-2 {
+                li + li + li {
+                    margin-top: 30px;
+                }
+            }
+
+            &.columns-3 {
+                li + li + li + li {
+                    margin-top: 30px;
+                }
+            }
+
+            &.columns-4 {
+                li + li + li + li + li {
+                    margin-top: 30px;
+                }
+            }
+
+            &.columns-5 {
+                li + li + li + li + li + li {
+                    margin-top: 30px;
+                }
+            }
+
+            &.columns-6 {
+                li + li + li + li + li + li + li {
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    :where(.editor-styles-wrapper) {
+        .wp-block-rss.is-grid {
+            li {
+                flex-grow: 0;
+                flex-shrink: 0;
+            }
+
+            &.columns-2 {
+                li {
+                    flex-basis: 50%;
+                    max-width: 50%;
+                }
+            }
+
+            &.columns-3 {
+                li {
+                    flex-basis: 33.333333%;
+                    max-width: 33.333333%;
+                }
+            }
+
+            &.columns-4 {
+                li {
+                    flex-basis: 25%;
+                    max-width: 25%;
+                }
+            }
+
+            &.columns-5 {
+                li {
+                    flex-basis: 20%;
+                    max-width: 20%;
+                }
+            }
+
+            &.columns-6 {
+                li {
+                    flex-basis: 16.666667%;
+                    max-width: 16.666667%;
+                }
+            }
+        }
+    }
+}

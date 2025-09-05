@@ -1,0 +1,17 @@
+.wp-customizer .menu-item-settings {
+    overflow: visible;
+}
+
+.wp-customizer .menu-item-settings::after {
+    content: "";
+    display: table;
+    width: 100%;
+    clear: both;
+}
+
+.field-icon {
+    margin: 2px 0 5px;
+    color: #646970;
+    font-size: 13px;
+    line-height: 1.5;
+}

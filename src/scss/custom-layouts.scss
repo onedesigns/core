@@ -1,0 +1,9 @@
+.enlightenment-custom-layout__radio-controls {
+    .components-radio-control + .components-radio-control {
+        margin-top: 12px;
+    }
+
+    .components-base-control__label {
+        font-weight: 500;
+    }
+}

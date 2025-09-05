@@ -1,0 +1,71 @@
+:where(.editor-styles-wrapper) {
+    .wp-block-search {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+
+		&.wp-block-search__button-inside .wp-block-search__inside-wrapper,
+        &:not(.wp-block-search__button-inside) .wp-block-search__input {
+            flex: 1 1 0%;
+            min-width: 0;
+            width: 100%;
+            height: calc(1.5em + .75rem + 2px);
+            margin: 0;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #6d757d;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: var(--bs-border-radius);
+        }
+
+		&.wp-block-search__button-inside .wp-block-search__inside-wrapper {
+			padding: .5rem;
+		}
+
+		&:not(.wp-block-search__button-inside) .wp-block-search__input {
+			display: block;
+            padding: .375rem .75rem;
+		}
+
+		&:not(.wp-block-search__button-inside):not(.wp-block-search__no-button) .wp-block-search__input {
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+
+		&.wp-block-search__button-inside .wp-block-search__input {
+			padding: 0;
+			border: none;
+			border-radius: 0;
+		}
+
+		.wp-block-search__input {
+			color: #757575;
+		}
+
+        .wp-block-search__button {
+            display: inline-flex;
+            align-items: center;
+            padding: .375rem .75rem;
+            margin-left: -1px;
+            background-color: #f8f9fa;
+            border: 1px solid #ced4da;
+            border-radius: var(--bs-border-radius);
+            box-shadow: none;
+            color: #212529;
+            font-size: 1rem;
+            line-height: 1.5;
+            font-weight: 400;
+            line-height: 1.25rem;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+		&:not(.wp-block-search__button-inside):not(.wp-block-search__no-button) .wp-block-search__button {
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+		}
+    }
+}

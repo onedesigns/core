@@ -1,0 +1,15 @@
+:where(.editor-styles-wrapper) {
+    .wc-block-product-categories.is-list {
+        .wc-block-product-categories-list {
+            list-style: none;
+            padding-left: 0;
+            margin-left: 0;
+
+            .wc-block-product-categories-list-item {
+                .wc-block-product-categories-list {
+                    padding-left: 1.5rem;
+                }
+            }
+        }
+    }
+}

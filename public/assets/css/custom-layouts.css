@@ -1,0 +1,9 @@
+/*!***********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/custom-layouts.scss ***!
+  \***********************************************************************************************************************/
+.enlightenment-custom-layout__radio-controls .components-radio-control + .components-radio-control {
+  margin-top: 12px;
+}
+.enlightenment-custom-layout__radio-controls .components-base-control__label {
+  font-weight: 500;
+}

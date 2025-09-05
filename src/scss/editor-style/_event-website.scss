@@ -1,0 +1,18 @@
+:where(.editor-styles-wrapper) {
+	.wp-block[data-type="tribe/event-website"] {
+	    .tribe-editor__event-website__label-text {
+	        input {
+	            max-width: none;
+	            min-height: unset;
+	            padding: .375rem .75rem;
+	            margin: 0;
+	            border: 1px solid #0d6efd;
+	            border-radius: var(--bs-border-radius);
+	            background-color: #0d6efd;
+	            color: #fff;
+	            font-size: 1rem;
+	            line-height: 1.5;
+	        }
+	    }
+	}
+}

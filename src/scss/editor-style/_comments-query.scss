@@ -1,0 +1,55 @@
+:where(.editor-styles-wrapper) {
+	.wp-block-comments-pagination {
+		display: flex;
+		align-items: center;
+
+		& > .wp-block-comments-pagination-previous,
+		& > .wp-block-comments-pagination-next,
+		& > .wp-block-comments-pagination-numbers {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+
+		& > .wp-block-comments-pagination-previous,
+		& > .wp-block-comments-pagination-next {
+			margin-left: 0 !important;
+			margin-right: 0 !important;
+		}
+
+		& > .wp-block-comments-pagination-numbers {
+			display: flex;
+
+			.page-numbers {
+				display: block;
+				padding: .375rem .75rem;
+				margin: 0;
+			    border: 1px solid #dee2e6;
+			    background-color: #fff;
+			    text-decoration: none;
+
+				& + .page-numbers {
+					margin-left: -1px;
+				}
+
+				&.current {
+					border-color: #0d6efd;
+					background-color: #0d6efd;
+				}
+
+				&:first-child {
+					border-top-left-radius: var(--bs-border-radius);
+				    border-bottom-left-radius: var(--bs-border-radius);
+				}
+
+				&:last-child {
+					border-top-right-radius: var(--bs-border-radius);
+				    border-bottom-right-radius: var(--bs-border-radius);
+				}
+			}
+
+			a.page-numbers {
+				color: #0d6efd;
+			}
+		}
+	}
+}

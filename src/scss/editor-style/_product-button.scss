@@ -1,0 +1,27 @@
+:where(.editor-styles-wrapper) {
+	.wp-block-button.wc-block-components-product-button {
+		margin-bottom: 0;
+
+		.wp-block-button__link {
+			padding: var(--enlightenment-btn-padding-y) var(--enlightenment-btn-padding-x);
+			border: var(--bs-border-width) var(--bs-border-style) transparent;
+			border-radius: var(--enlightenment-btn-border-radius);
+			font-size: var(--enlightenment-btn-font-size);
+			font-weight: var(--enlightenment-btn-font-weight);
+			line-height: var(--enlightenment-btn-line-height);
+
+			&:not(.has-background) {
+				border-color: #6c757d;
+				background-color: #6c757d;
+			}
+
+			&:not(.has-text-color) {
+				color: #fff;
+			}
+		}
+	}
+
+	.is-loading .wc-block-components-product-button > .wc-block-components-product-button__button {
+		min-height: calc(2.25rem + 2px);
+	}
+}

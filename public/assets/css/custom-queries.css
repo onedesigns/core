@@ -1,0 +1,36 @@
+.enlightenment-custom-query-widget .grid,
+.enlightenment-custom-query-widget .post-types,
+.enlightenment-custom-query-widget .post-type,
+.enlightenment-custom-query-widget .page,
+.enlightenment-custom-query-widget .pages,
+.enlightenment-custom-query-widget .image-gallery,
+.enlightenment-custom-query-widget .author,
+.enlightenment-custom-query-widget .taxonomy,
+.enlightenment-custom-query-widget .term,
+.enlightenment-custom-query-widget .posts-count,
+.enlightenment-custom-query-widget .lead-posts,
+.enlightenment-custom-query-widget .archive-link,
+.enlightenment-custom-query-widget .archive-link-label {
+	display: none;
+}
+
+.enlightenment-custom-query-widget div.pages,
+.enlightenment-custom-query-widget div.image-gallery,
+.enlightenment-custom-query-widget div.grid {
+	margin: 1em 0;
+}
+
+.enlightenment-custom-query-widget .show {
+	display: block;
+}
+
+.enlightenment-custom-query-widget .pages-inner {
+	padding: 10px;
+	background: #f3f3f3;
+	box-shadow: inset 1px 1px 5px rgba(0,0,0,.05);
+}
+
+.enlightenment-custom-query-widget .pages-inner fieldset {
+	max-height: 100px;
+	overflow: scroll;
+}

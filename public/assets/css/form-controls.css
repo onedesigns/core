@@ -1,0 +1,243 @@
+.enlightenment-opacity-slider {
+	margin-top: 8px;
+}
+
+.enlightenment-opacity-output {
+    margin-top: 4px;
+}
+
+.wp-core-ui .upload-media-button {
+	margin-right: 10px;
+}
+
+.preview-media {
+	margin-top: 10px;
+	overflow: hidden;
+}
+
+.preview-media:empty {
+	display: none;
+}
+
+.preview-media img {
+	display: block;
+	height: auto;
+}
+
+.upload-media-button[data-thumbnail="thumbnail"] + .preview-media img {
+	max-width: 150px;
+}
+
+.upload-media-button[data-multiple="1"] + .preview-media {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: -4.5px;
+	margin-left: -7.25px;
+	margin-right: -7.25px;
+}
+
+.upload-media-button[data-multiple="1"] + .preview-media img {
+	max-width: 75px;
+	margin-top: 14.5px;
+	margin-left: 7.25px;
+	margin-right: 7.25px;
+}
+
+.font-options {
+	margin: -5px 0 0;
+	line-height: 36px;
+}
+
+.font-options select {
+	max-width: 250px;
+	margin-right: 7px;
+}
+
+.font-options-preview {
+	max-width: 600px;
+	margin: 8px 0 8px 2px;
+	background: #fff;
+	padding: 15px;
+}
+
+.image-radio-buttons,
+.position-radio-buttons fieldset {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: -.5625rem;
+	margin-left: -.28125rem;
+    margin-right: -.28125rem;
+}
+
+.image-radio-buttons-legend,
+.image-radio-buttons .radio-button-control,
+.position-radio-button-control {
+	box-sizing: border-box;
+	padding-left: .28125rem;
+    padding-right: .28125rem;
+	margin-top: .5625rem;
+}
+
+.image-radio-buttons-legend {
+	flex: 0 0 100%;
+	max-width: 100%;
+}
+
+.text-radio-button-control {
+	display: flex;
+    align-items: center;
+	flex: 0 0 100%;
+	max-width: 100%;
+}
+
+.position-radio-buttons .text-radio-button-control {
+	margin-bottom: 8px;
+}
+
+.form-table td fieldset .position-radio-buttons .text-radio-button-control label {
+	margin: 0 !important;
+}
+
+.text-radio-button-control input[type="radio"] {
+	margin-top: 0;
+}
+
+.image-radio-button-control,
+.position-radio-button-control {
+	position: relative;
+	flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.image-radio-button-control input[type="radio"],
+.position-radio-button-control input[type="radio"] {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: -1;
+	margin: -8px 0 0 -8px;
+}
+
+.position-radio-buttons fieldset {
+    max-width: 84px;
+    margin-top: -8px;
+    margin-left: -4px;
+    margin-right: -4px;
+}
+
+.position-radio-button-control {
+    flex-basis: 33.3333333333%;
+    max-width: 33.3333333333%;
+	padding-left: 4px;
+    padding-right: 4px;
+    margin-top: 8px;
+}
+
+.image-radio-button-control label,
+.position-radio-button-control label {
+	display: flex;
+	padding: .21rem;
+	border: 1px solid #8c8f94;
+	background-color: #fff;
+	color: #8c8f94;
+}
+
+.form-table td fieldset .position-radio-button-control label {
+	display: flex;
+	margin: 0 !important;
+}
+
+.position-radio-button-control label::before {
+	content: "";
+	display: inline-block;
+	width: .7055rem;
+	height: .7055rem;
+	background-color: #8c8f94;
+}
+
+.position-radio-button-control input[type="radio"]:checked + label::before {
+	background-color: #2271b1;
+}
+
+.form-table td fieldset .image-radio-button-control label {
+	display: flex !important;
+	margin: 0 !important;
+}
+
+.image-radio-button-control input[type="radio"]:focus + label,
+.position-radio-button-control input[type="radio"]:focus + label {
+	border-color: #2271b1;
+	box-shadow: 0 0 0 1px #2271b1;
+}
+
+.image-radio-button-control input[type="radio"]:checked + label {
+	color: #2271b1;
+}
+
+.background-options p:not(:first-child) {
+	margin-bottom: 1em;
+}
+
+.background-options__bg-color {
+	margin-bottom: .2214em;
+}
+
+.background-options__bg-image {
+	margin-bottom: .5em;
+}
+
+.background-options__bg-position {
+	margin-bottom: 1em;
+}
+
+.background-options select {
+	min-width: 150px;
+}
+
+.default-layout,
+.default-sidebars {
+	margin-top: 1em;
+	margin-bottom: 1px;
+	line-height: 1.5;
+}
+
+.custom-layout {
+	padding-top: 1em;
+}
+
+.custom-layout-title {
+	margin: 0 0 4px;
+	font-size: 14px;
+	line-height: 1.6;
+}
+
+.custom-layout p {
+	margin: 0 0 6px;
+}
+
+.local-fonts,
+.google-fonts {
+	max-height: 265px;
+	padding: 15px;
+	background: #fff;
+	overflow: auto;
+}
+
+.local-fonts label,
+.google-fonts label {
+	font-size: 20px;
+}
+
+#enlightenment_page_builder #widgets-left #available-widgets .widget {
+	width: 100%;
+	margin-bottom: 10px;
+	float: none;
+}
+
+.sidebar-location {
+	padding-top: 1em;
+}
+
+.sidebar-location .post-attributes-label-wrapper {
+	margin-top: 0;
+}

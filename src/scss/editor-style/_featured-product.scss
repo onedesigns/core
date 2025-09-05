@@ -1,0 +1,60 @@
+:where(.editor-styles-wrapper) {
+    .wc-block-featured-product {
+        .wc-block-featured-product__wrapper {
+            margin-right: auto;
+            margin-left: auto;
+            overflow: visible;
+        }
+
+        .wc-block-featured-product__link {
+            padding: 0;
+
+            .wp-block:not(.wp-block-buttons):not(.wp-block-button) {
+                display: block;
+                margin-top: 0 !important;
+                margin-bottom: 0;
+            }
+
+            .wp-block-button {
+                margin-top: 0;
+                margin-bottom: 0;
+                color: #212529;
+
+                &.wp-block-button__link,
+                .wp-block-button__link {
+                    margin: 0 auto;
+                    border-color: transparent;
+                    background-color: #f8f9fa;
+                    color: #212529;
+
+                    &:not(.has-background) {
+                        border-color: #f8f9fa;
+                    }
+
+                    &[data-align="left"] {
+                        margin-left: 0;
+                    }
+
+                    &[data-align="right"] {
+                        margin-right: 0;
+                    }
+                }
+
+                &.is-style-outline {
+                    color: #f8f9fa;
+
+                    &.wp-block-button__link,
+                    .wp-block-button__link {
+                        border-color: initial;
+                        background-color: transparent;
+                        color: #f8f9fa;
+
+                        &:not(.has-text-color) {
+                            border-color: #f8f9fa;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

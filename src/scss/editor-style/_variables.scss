@@ -1,0 +1,41 @@
+:root {
+	--bs-body-bg: #fff;
+	--bs-body-color: #212529;
+	--bs-body-color-rgb: 33, 37, 41;
+	--bs-body-font-size: 1rem;
+	--bs-body-line-height: 1.5;
+	--bs-link-color: #0d6efd;
+	--bs-tertiary-bg: #f8f9fa;
+	--bs-border-radius: 0.375rem;
+	--bs-border-radius-sm: 0.25rem;
+	--bs-border-radius-lg: 0.5rem;
+	--bs-border-color: #dee2e6;
+	--bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+	--bs-border-style: solid;
+	--bs-border-width: 1px;
+	--bs-info-border-subtle: #9eeaf9;
+	--bs-info-bg-subtle: #cff4fc;
+	--bs-info-text-emphasis: #055160;
+	--bs-gutter-x: 1.5rem;
+	--bs-gutter-y: 0;
+	--bs-focus-ring-width: 0.25rem;
+	--bs-focus-ring-color: rgba(13, 110, 253, 0.25);
+
+	--enlightenment-btn-padding-x: 0.75rem;
+	--enlightenment-btn-padding-y: 0.375rem;
+	--enlightenment-btn-border-radius: var(--bs-border-radius);
+	--enlightenment-btn-font-size: 1rem;
+	--enlightenment-btn-font-weight: 400;
+	--enlightenment-btn-line-height: 1.5;
+	--enlightenment-btn-lg-padding-x: 1rem;
+	--enlightenment-btn-lg-padding-y: 0.5rem;
+	--enlightenment-btn-lg-border-radius: var(--bs-border-radius-lg);
+	--enlightenment-btn-lg-font-size: 1.25rem;
+
+	--bs-nav-link-color: var(--bs-link-color);
+	--bs-dropdown-min-width: 10rem;
+	--bs-dropdown-border-radius: var(--bs-border-radius);
+	--bs-dropdown-link-color: var(--bs-body-color);
+	--bs-dropdown-link-hover-color: var(--bs-body-color);
+	--bs-dropdown-link-hover-bg: var(--bs-tertiary-bg);
+}

@@ -1,0 +1,19 @@
+:where(.editor-styles-wrapper) {
+    [data-type="jetpack/eventbrite"]{
+        &[data-align="center"],
+        &[data-align="wide"],
+        &[data-align="full"] {
+            .wp-block-jetpack-eventbrite {
+                justify-content: center;
+            }
+        }
+    }
+
+    .wp-block-jetpack-eventbrite {
+        display: flex;
+
+        &.wp-block-button.is-style-outline:not(.wp-block-button__link) {
+            border-width: 0;
+        }
+    }
+}

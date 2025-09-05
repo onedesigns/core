@@ -1,0 +1,14 @@
+.wp-block-separator {
+	box-sizing: border-box;
+	color: inherit;
+    background-color: currentColor;
+	opacity: .25;
+
+	&:not([size]) {
+		height: 1px;
+	}
+
+	&.is-style-dots {
+		height: auto;
+	}
+}

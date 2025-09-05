@@ -1,0 +1,15 @@
+:where(.editor-styles-wrapper) {
+    [data-type="jetpack/calendly"]{
+        &[data-align="center"],
+        &[data-align="wide"],
+        &[data-align="full"] {
+            .wp-block-jetpack-calendly {
+                justify-content: center;
+            }
+        }
+    }
+
+    .wp-block-jetpack-calendly {
+        display: flex;
+    }
+}

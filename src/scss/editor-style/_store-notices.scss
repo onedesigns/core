@@ -1,0 +1,36 @@
+.wc-block-components-notice-banner {
+	align-items: baseline;
+	gap: .5rem;
+	padding: 1rem !important;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	font-size: var(--bs-body-font-size);
+	line-height: var(--bs-body-line-height);
+
+	&.is-info {
+		background-color: var(--bs-info-bg-subtle);
+	    border: var(--bs-border-width) solid var(--bs-info-border-subtle);
+	    border-radius: var(--bs-border-radius);
+		color: var(--bs-info-text-emphasis);
+	}
+
+	&::before {
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing: antialiased;
+		display: inline-block;
+		font-family: "Font Awesome 5 Free";
+		font-weight: 900;
+		font-style: normal;
+		font-variant: normal;
+		line-height: 1;
+		text-rendering: auto;
+
+		&::before {
+			content: "\f05a";
+		}
+	}
+
+	& > svg {
+		display: none;
+	}
+}

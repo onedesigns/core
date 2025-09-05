@@ -1,0 +1,27 @@
+.profile-group fieldset {
+	padding: 10px;
+	margin-bottom: 1em;
+	border: 1px solid #e5e5e5;
+}
+
+.profile-group legend {
+	padding: 0 5px;
+}
+
+.widget[id*="enlightenment_bp_profile_widget"] fieldset legend + p,
+.wp-block-legacy-widget__edit-form .widget-inside.widget-inside .profile-group fieldset legend + p {
+	margin-top: 0;
+}
+
+.wp-block-legacy-widget__edit-form .wrapper-dropdown::before {
+	min-height: 34px;
+}
+
+.wp-block-legacy-widget__edit-form .wrapper-dropdown .current {
+	min-height: 34px;
+	line-height: 34px;
+}
+
+.widget[id*="enlightenment_rtmedia_latest_photos_widget"] input[type="number"] {
+	max-width: 30%;
+}
